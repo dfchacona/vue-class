@@ -14,13 +14,36 @@ var app = new Vue (
             variants: [
                 {
                     variantId: "2234", 
-                    variantColor: "green"
+                    variantColor: "green",
+                    variantSize: "Small"
                 },
                 {
                     variantId: "2235", 
-                    variantColor: "blue"
+                    variantColor: "green",
+                    variantSize: "Medium"
+                },
+                {
+                    variantId: "2236", 
+                    variantColor: "green",
+                    variantSize: "Large"
+                },
+                {
+                    variantId: "2237", 
+                    variantColor: "blue",
+                    variantSize: "Small"
+                },
+                {
+                    variantId: "2238", 
+                    variantColor: "blue",
+                    variantSize: "Medium"
+                },
+                {
+                    variantId: "2239", 
+                    variantColor: "blue",
+                    variantSize: "Large"
                 }
             ]
+            
         }
     }
 );
