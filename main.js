@@ -1,1 +1,1 @@
-var product = 'Socks'
+var product = 'Socks';
