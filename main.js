@@ -8,7 +8,8 @@ var app = new Vue (
             color: 'White',
             image: IMAGE_ROUTE,
             link: '#hola',
-            inventory: 10
+            inventory: 10,
+            onSale: true
         }
     }
 );
