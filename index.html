@@ -12,8 +12,13 @@
 
     <div id="app">
         <div class="product">
-            <h1>{{ product }}</h1>
-            <h2>{{ color }}</h2>
+            <div class="product-image">
+                <img v-bind:src="image" alt="Product Image">
+            </div>
+
+            <div class="product-info">
+                <h1>{{ product }}</h1>
+            </div>
         </div>
     </div>
 
