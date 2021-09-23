@@ -6,7 +6,9 @@ var app = new Vue (
         data: {
             product: 'Socks',
             color: 'White',
-            image: IMAGE_ROUTE
+            image: IMAGE_ROUTE,
+            link: "#hola"
+
         }
     }
 );
