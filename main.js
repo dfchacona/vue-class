@@ -9,7 +9,8 @@ var app = new Vue (
             image: IMAGE_ROUTE,
             link: '#hola',
             inventory: 10,
-            onSale: true
+            onSale: true,
+            details: ["80% cotton", "20% polyester", "Unisex"]
         }
     }
 );
