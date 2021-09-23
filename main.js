@@ -7,8 +7,7 @@ var app = new Vue (
             product: 'Socks',
             color: 'White',
             image: IMAGE_ROUTE,
-            link: "#hola"
-
+            link: '#hola'
         }
     }
 );

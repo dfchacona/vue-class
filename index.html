@@ -13,11 +13,7 @@
     <div id="app">
         <div class="product">
             <div class="product-image">
-                <img v-bind:src="image" alt="Product Image">
-            </div>
-
-            <div class="product-link">
-                <a v-bind:href="link"> Google</a>
+                <img v-bind:src="image" v-bind:href="link" alt="Product Image">
             </div>
 
             <div class="product-info">
