@@ -10,7 +10,17 @@ var app = new Vue (
             link: '#hola',
             inventory: 10,
             onSale: true,
-            details: ["80% cotton", "20% polyester", "Unisex"]
+            details: ["80% cotton", "20% polyester", "Unisex"],
+            variants: [
+                {
+                    variantId: "2234", 
+                    variantColor: "green"
+                },
+                {
+                    variantId: "2235", 
+                    variantColor: "blue"
+                }
+            ]
         }
     }
 );

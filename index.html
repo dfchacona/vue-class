@@ -29,6 +29,10 @@
                     </li>
                 </ul>
 
+                <div v-for="variant in variants" v-bind:key="variant.variantId">
+                    <p>{{ variant.variantColor }}</p>
+                </div>
+
             </div>
         </div>
     </div>
