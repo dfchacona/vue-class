@@ -1,13 +1,12 @@
-const IMAGE_ROUTE = "./assets/friends.jpg"
-
 var app = new Vue (
     {
         el: '#app',
         data: {
             product: 'Socks',
             color: 'White',
-            image: IMAGE_ROUTE,
+            image: "./assets/friends.jpg",
             link: '#hola',
+            inStock: false,
             inventory: 10,
             onSale: true,
             details: ["80% cotton", "20% polyester", "Unisex"],
@@ -15,35 +14,26 @@ var app = new Vue (
                 {
                     variantId: "2234", 
                     variantColor: "green",
-                    variantSize: "Small"
+                    variantImage:"./assets/friends.jpg"
                 },
                 {
                     variantId: "2235", 
-                    variantColor: "green",
-                    variantSize: "Medium"
-                },
-                {
-                    variantId: "2236", 
-                    variantColor: "green",
-                    variantSize: "Large"
-                },
-                {
-                    variantId: "2237", 
                     variantColor: "blue",
-                    variantSize: "Small"
-                },
-                {
-                    variantId: "2238", 
-                    variantColor: "blue",
-                    variantSize: "Medium"
-                },
-                {
-                    variantId: "2239", 
-                    variantColor: "blue",
-                    variantSize: "Large"
+                    variantImage: "./assets/Venom.jpeg"
                 }
-            ]
-            
+            ],
+            cart: 0            
+        },
+        methods: {
+            addToCart: function(){
+                this.cart +=1
+            },
+            removeCart: function(){
+                this.cart -=1
+            },
+            updateProduct: function(variantImage){
+                this.image =variantImage
+            }
         }
     }
 );
