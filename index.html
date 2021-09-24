@@ -17,15 +17,17 @@
             </div>
 
             <div class="product-info">
-                <h1>{{ product }}</h1>
-                <!-- <p v-if="inventory > 10">In Stock</p>
-                <p v-else-if="inventory <= 10 && inventory > 0">Almost Sold Out</p>
-                <p v-else>Out of Stock</p>
-                <span v-if="onSale">On Sale!</span> -->
-
+                <h1>{{ title }}</h1>
                 <p v-if="inStock"> In Stock</p>
                 <p v-else
-                   v-bind:class="{ lineThrough: !inStock }"> Out of Stock</p>
+                   v-bind:class="{ lineThrough: !inStock }"> Out of Stock
+                </p>
+
+                 <!-- <p v-if="inventory > 10">In Stock</p>
+                <p v-else-if="inventory <= 10 && inventory > 0">Almost Sold Out</p>
+                <p v-else>Out of Stock</p> -->
+
+                <span v-if="onSale">{{ onSales }}</span> 
 
                 <ul>
                     <li v-for="detail in details">
@@ -33,11 +35,11 @@
                     </li>
                 </ul>
 
-                <div v-for="variant in variants" 
+                <div v-for="(variant, index) in variants" 
                      v-bind:key="variant.variantId"
                      class="color-box"
                      v-bind:style="{ backgroundColor: variant.variantColor }" 
-                     @mouseover="updateProduct(variant.variantImage)">
+                     @mouseover="updateProduct(index)">
                 </div>
 
                 <button v-on:click="addToCart"  
